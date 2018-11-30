@@ -1,0 +1,37 @@
+// custom carousel
+.carousel {
+  margin-top: $navbar-custom-height;
+}
+
+.carousel-caption {
+  text-align: left;
+
+}
+
+.carousel-item {
+  height: $carousel-height;
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+  }
+}
+// custom jumbotron
+.jumbotron {
+  display: none !important;
+}
+@media (max-width: 801px) {
+  .carousel {
+    font-size: 2vw;
+  }
+  .carousel-item {
+    height: $carousel-height;
+    img {
+      object-fit: cover;
+      object-position: 50% 50%;
+      height: auto;
+      width: auto;
+    }
+  }
+}
